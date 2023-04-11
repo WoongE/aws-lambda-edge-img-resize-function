@@ -1,5 +1,5 @@
 FROM amazonlinux:2
-MAINTAINER Kihoon Han <me@hoony9x.com>
+MAINTAINER Woonge <woonge@doctornow.co.kr>
 
 RUN yum update -y
 RUN yum install python3 zip -y

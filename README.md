@@ -44,7 +44,7 @@ $ cd .. && zip -g function.zip lambda_function.py
 ```bash
 $ aws lambda update-function-code \
 --region us-east-1 \
---function-name <YOUR_LAMBDA_FUNCTION_NAME> \
+--function-name resize-image-python3_7 \
 --zip-file fileb://function.zip
 ```
 
@@ -54,7 +54,7 @@ Lambda@Edge 에 deploy 를 위해서는 업로드한 코드의 Publish 가 선�
 ```bash
 $ aws lambda publish-version \
 --region us-east-1 \
---function-name <YOUR_LAMBDA_FUNCTION_NAME>
+--function-name resize-image-python3_7
 ```
 
 ### Deploy to Lambda@Edge
